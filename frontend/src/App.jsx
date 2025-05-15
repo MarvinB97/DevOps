@@ -1,8 +1,12 @@
+
 import { useEffect, useState } from 'react';
 import './App.css';
 import AppTitle from './components/AppTitle';
 import AppNavBar from './components/AppNavBar';
 import AppCard from './components/AppCard';
+import './App.css'
+import PokemonCard from './components/PokemonCard'
+
 
 function App() {
 
@@ -44,6 +48,7 @@ function App() {
       <AppTitle />
       <AppNavBar users={userNames} user={user} onClick={handleClick} onSearch={handleSearch} />
       <AppCard pokemonName={searchTerm} />
+      <PokemonCard name="bulbasur" types={["Planta","Agua"]} discoverer={"Alfonso Lopez"} id={0} />
     </>
   );
 }

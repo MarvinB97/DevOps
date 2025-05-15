@@ -1,0 +1,69 @@
+/* Cambia el fondo del Card */
+.PokemonCard {
+  background-color: #01850c57 !important;
+  border-radius: 10px;
+  border-color: white !important;
+  overflow: hidden;
+}
+
+.PokemonCardImgBackground {
+  position: absolute;
+  right: -120px;
+  bottom: -120px;
+  width: 350px;
+  height: 350px;
+  background-image: url('src/assets/pokeball.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  transform: rotate(-36deg);
+  opacity: 0.3; 
+  z-index: -1; 
+}
+
+.PokemonCardHeader {
+  background-color: #01850c00 !important;
+  border: none !important;
+  padding: 0px 16px 0px 8px !important;
+  margin-bottom: 0px !important;
+  justify-content: space-between !important;
+  display: flex;
+}
+
+.PokemonCardHeaderId {
+  font-size: x-large !important;
+  font-weight: bold !important;
+  color: #ffffff98 !important;
+}
+
+.PokemonCardHeaderDiscoverer {
+  font-size: large !important;
+  font-weight: bold !important;
+  color: #ffffff98 !important;
+}
+
+.PokemonCardTitle {
+  font-size: 25px !important;
+  font-weight: 600 !important;
+  color: white !important;
+  margin-bottom: 2rem !important;
+}
+
+.PokemonCardBody {
+  padding-top: 0 !important;
+  text-align: left;
+}
+
+.PokemonCardCol {
+  padding: 0 !important;
+}
+
+.PokemonCardType {
+  background-color: #047ef169;
+  padding: 0px;
+  color: white !important;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.PokemonCardImgBackground {}
