@@ -26,7 +26,10 @@ const AppCard = ({pokemonName}) => {
         <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={pokemon.sprites.front_default} alt={pokemon.name} />
         <Card.Body>
-            <Card.Title style={{ textTransform: 'capitalize' }}>{pokemon.name}</Card.Title>
+            <Card.Title data-testid="pokemon-name" style={{ textTransform: 'capitalize' }}>
+  {pokemon.name}
+</Card.Title>
+
             <Card.Subtitle className="mb-2 text-muted">Habilidades:</Card.Subtitle>
             <ul>
                 {pokemon.abilities.map((item, index) => (
